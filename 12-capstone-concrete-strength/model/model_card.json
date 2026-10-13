@@ -1,0 +1,79 @@
+{
+  "model": "HistGradientBoostingRegressor + physics features (FunctionTransformer)",
+  "sklearn_version": "1.9.1",
+  "inputs": [
+    "cement",
+    "slag",
+    "ash",
+    "water",
+    "superplastic",
+    "coarseagg",
+    "fineagg",
+    "age"
+  ],
+  "units": {
+    "components": "kg/m^3",
+    "age": "days",
+    "target": "MPa"
+  },
+  "best_params": {
+    "model__l2_regularization": 0.12563152773938666,
+    "model__learning_rate": 0.059061298277369265,
+    "model__max_features": 0.42799939792816927,
+    "model__max_iter": 339,
+    "model__max_leaf_nodes": 8,
+    "model__min_samples_leaf": 7
+  },
+  "cv_rmse_mpa": 5.576,
+  "test_metrics": {
+    "RMSE (MPa)": 5.557,
+    "MAE (MPa)": 3.859,
+    "R\u00b2": 0.903
+  },
+  "test_rmse_95ci_mpa": [
+    4.55,
+    6.7
+  ],
+  "training_ranges": {
+    "cement": [
+      102.0,
+      540.0
+    ],
+    "slag": [
+      0.0,
+      359.4
+    ],
+    "ash": [
+      0.0,
+      200.1
+    ],
+    "water": [
+      121.8,
+      247.0
+    ],
+    "superplastic": [
+      0.0,
+      32.2
+    ],
+    "coarseagg": [
+      801.0,
+      1125.0
+    ],
+    "fineagg": [
+      594.0,
+      992.6
+    ],
+    "age": [
+      1.0,
+      365.0
+    ],
+    "w_c": [
+      0.28,
+      1.882
+    ],
+    "w_b": [
+      0.235,
+      0.9
+    ]
+  }
+}
